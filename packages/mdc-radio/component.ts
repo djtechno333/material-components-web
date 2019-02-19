@@ -23,11 +23,10 @@
 
 import {MDCComponent} from '@material/base/component';
 import {MDCRipple, MDCRippleAdapter, MDCRippleFoundation, RippleCapableSurface} from '@material/ripple/index';
-import {MDCSelectionControl} from '@material/selection-control/index';
 import {MDCRadioAdapter} from './adapter';
 import {MDCRadioFoundation} from './foundation';
 
-export class MDCRadio extends MDCComponent<MDCRadioFoundation> implements RippleCapableSurface, MDCSelectionControl {
+export class MDCRadio extends MDCComponent<MDCRadioFoundation> implements RippleCapableSurface {
   static attachTo(root: Element) {
     return new MDCRadio(root);
   }

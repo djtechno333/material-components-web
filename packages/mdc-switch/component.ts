@@ -25,7 +25,6 @@ import {MDCComponent} from '@material/base/component';
 import {EventType} from '@material/base/types';
 import {ponyfill} from '@material/dom/index';
 import {MDCRipple, MDCRippleAdapter, MDCRippleFoundation, RippleCapableSurface} from '@material/ripple/index';
-import {MDCSelectionControl} from '@material/selection-control/index';
 import {MDCSwitchAdapter} from './adapter';
 import {MDCSwitchFoundation} from './foundation';
 
@@ -34,7 +33,7 @@ import {MDCSwitchFoundation} from './foundation';
  *
  * https://material.io/design/components/selection-controls.html#switches
  */
-export class MDCSwitch extends MDCComponent<MDCSwitchFoundation> implements MDCSelectionControl, RippleCapableSurface {
+export class MDCSwitch extends MDCComponent<MDCSwitchFoundation> implements RippleCapableSurface {
   static attachTo(root: HTMLElement) {
     return new MDCSwitch(root);
   }
